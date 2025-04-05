@@ -1,49 +1,8 @@
 # Foundry Cross Chain Rebase Token
 
-This is a section of the Cyfrin Foundry Solidity course.
-
 # About
 
 This project is a cross-chain rebase token where users can depost ETH in exchange for rebase tokens which accrue rewards over time.
-
-- [Foundry Cross Chain Rebase Token](#foundry-cross-chain-rebase-token)
-- [About](#about)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-- [Updates](#updates)
-- [Usage](#usage)
-  - [Start a local node](#start-a-local-node)
-  - [Deploy](#deploy)
-  - [Deploy - Other Network](#deploy---other-network)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-- [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-  - [Scripts](#scripts)
-  - [Estimate gas](#estimate-gas)
-- [Formatting](#formatting)
-- [Thank you!](#thank-you)
-
-# Getting Started
-
-## Requirements
-
-- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-  - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
-- [foundry](https://getfoundry.sh/)
-  - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
-
-## Quickstart
-
-```
-git clone https://github.com/Cyfrin/foundry-cross-chain-rebase-token-cu
-cd foundry-cross-chain-rebase-token-cu
-forge build
-```
-
-# Updates
-
-# Usage
 
 ## Start a local node
 
@@ -147,22 +106,3 @@ To run code formatting:
 ```
 forge fmt
 ```
-
-# Thank you!
-
-## Project design and assumptions
-
-WHATEVER INTEREST THEY DEPOSIT WITH, THEY STICK WITH
-
-This project is a cross-chain rebase token that integrates Chainlink CCIP to enable users to bridge their tokens cross-chain
-
-### NOTES
-
-- assumed rewards are in contract
-- Protocol rewards early users and users which bridge to the L2
-  - The interest rate decreases discretely
-  - The interest rate when a user bridges is bridges with them and stays static. So, by bridging you get to keep your high interest rate.
-- You can only deposit and withdraw on the L1.
-- You cannot earn interest in the time while bridging.
-
-Don't forget to bridge back the amount of interest they accrued on the destination chain in that time
